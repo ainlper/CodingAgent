@@ -8,8 +8,8 @@ from unittest import mock
 
 import pytest
 
-from corecoder.llm import LLM, LiteLLM, LLMResponse, ToolCall
-from corecoder.config import Config
+from codingagent.llm import LLM, LiteLLM, LLMResponse, ToolCall
+from codingagent.config import Config
 
 
 # ---------------------------------------------------------------------------
@@ -222,7 +222,7 @@ class TestConfigProvider:
             assert config.provider == "litellm"
 
     def test_cli_picks_litellm_class(self):
-        from corecoder.llm import LiteLLM
+        from codingagent.llm import LiteLLM
         config = Config(provider="litellm", model="anthropic/claude-3-haiku", api_key="k")
         llm_cls = LiteLLM if config.provider == "litellm" else LLM
         assert llm_cls is LiteLLM

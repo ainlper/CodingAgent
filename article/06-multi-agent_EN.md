@@ -157,9 +157,9 @@ CoreCoder currently only has one Agent type (general-purpose), but you can simul
 
 ```python
 # Read-only Agent
-from CoreCoder.tools.read import ReadFileTool
-from CoreCoder.tools.grep import GrepTool
-from CoreCoder.tools.glob_tool import GlobTool
+from codingagent.tools.read import ReadFileTool
+from codingagent.tools.grep import GrepTool
+from codingagent.tools.glob_tool import GlobTool
 
 explore_agent = Agent(llm=llm, tools=[ReadFileTool(), GrepTool(), GlobTool()])
 ```

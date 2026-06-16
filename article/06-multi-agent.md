@@ -159,9 +159,9 @@ CoreCoder 目前只有一种 Agent 类型（通用型），但你可以在 `Agen
 
 ```python
 # 只读 Agent
-from corecoder.tools.read import ReadFileTool
-from corecoder.tools.grep import GrepTool
-from corecoder.tools.glob_tool import GlobTool
+from codingagent.tools.read import ReadFileTool
+from codingagent.tools.grep import GrepTool
+from codingagent.tools.glob_tool import GlobTool
 
 explore_agent = Agent(llm=llm, tools=[ReadFileTool(), GrepTool(), GlobTool()])
 ```

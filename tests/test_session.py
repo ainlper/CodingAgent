@@ -4,8 +4,8 @@
 污染 ~/.corecoder，也让两个自动生成 ID 的文件副作用可以被直接验证。
 """
 
-from corecoder import session as session_module
-from corecoder.session import load_session, save_session
+from codingagent import session as session_module
+from codingagent.session import load_session, save_session
 
 
 def test_default_session_ids_do_not_collide(tmp_path, monkeypatch):
