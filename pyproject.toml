@@ -35,7 +35,7 @@ dependencies = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["codingagent", "corecoder"]
+packages = ["codingagent"]
 
 [project.optional-dependencies]
 litellm = ["litellm>=1.60.0,<2.0.0"]
