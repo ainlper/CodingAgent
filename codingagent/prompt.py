@@ -16,7 +16,7 @@ def system_prompt(tools) -> str:
 
     # 使用单个模板集中维护约束，避免规则散落在 Agent Loop 中。
     return f"""\
-You are CoreCoder, an AI coding assistant running in the user's terminal.
+You are CodingAgent, an AI coding assistant running in the user's terminal.
 You help with software engineering: writing code, fixing bugs, refactoring, explaining code, running commands, and more.
 
 # Environment

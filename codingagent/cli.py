@@ -264,12 +264,12 @@ def _show_help():
         "  /diff          Show files modified this session\n"
         "  /save          Save session to disk\n"
         "  /sessions      List saved sessions\n"
-        "  quit           Exit CoreCoder\n"
+        "  quit           Exit CodingAgent\n"
         "\n"
         "[bold]Input:[/bold]\n"
         "  Enter          Submit message\n"
         "  Esc+Enter      Insert newline (for pasting code)",
-        title="CoreCoder Help",
+        title="CodingAgent Help",
         border_style="dim",
     ))
 
